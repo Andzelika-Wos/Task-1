@@ -9,8 +9,6 @@ int main()
 	spend = 'y';
 	char notSpend;
 	notSpend = 'n';
-	bool spend1 = false;
-	bool notSpend1 = false;
 
 	if (money == 0)
 	{
@@ -27,51 +25,31 @@ int main()
 		}
 		cout << "Money is " << money << "\n";
 		cout << "Spend?\n";
-		cout << "y or n\n";
+		cout << "yes or no\n";
 		cin >> spend;
-		if
-		if (spend1 == true)
+		
+		if (spend == 'y')
 		{
 			cout << "How much?\n";
 			cin >> spend;
 			cout << "Now u broke again lol\n";
 		}
-		if (notSpend1 == false)
+		else if (spend == 'n')
 		{
 			cout << "Wise choice :3\n";
 		}
-		
-		
-		if (spend == 'y')
-		{
-			cout << " ";
-		}
-		else
-		{
-			if (notSpend == 'n')
-			{
-				cout << 'n';
-			}
-		}
 		//cout << !((spend == 'y') || (notSpend == 'n')) << "\n";
+
+
 	}
-	else if (money != 0){
+	else if (money != 0)
+	{
 		cout << "Money is " << money << "\n";
 		cout << "Spend?\n";
 		cout << "y or n\n";
 		cin >> spend;
 		cout << ((spend == 'y') || (notSpend == 'n')) << "\n";
 	}
-	if(spend == 'y')
-	{
-		cout << "How much?\n";
-		cin >> spend;
-		cout << "Now u broke again lol\n";
-	}
-	else if (spend == 'n')
-	{
-		cout << "Wise choice :3\n";
-	}
-
+	
 	return 0;
 }
